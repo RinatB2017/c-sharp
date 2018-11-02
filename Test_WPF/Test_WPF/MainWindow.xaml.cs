@@ -27,6 +27,8 @@ namespace Test_WPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Button btn = sender as Button;
+
             MessageBoxResult result = MessageBox.Show(
                 "Текст",
                 "Выберите вариант:",
@@ -34,11 +36,13 @@ namespace Test_WPF
                 MessageBoxImage.Information);
             if(result == MessageBoxResult.Yes)
             {
-                MessageBox.Show("Да", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("Да", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                btn.Background = Brushes.Red;
             }
             else
             {
-                MessageBox.Show("Нет", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("Нет", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                btn.Background = Brushes.Green;
             }
         }
     }
