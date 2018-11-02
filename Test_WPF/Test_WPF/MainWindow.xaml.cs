@@ -27,9 +27,19 @@ namespace Test_WPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(
+            MessageBoxResult result = MessageBox.Show(
                 "Текст",
-                "Сообщение");
+                "Выберите вариант:",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Information);
+            if(result == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Yes", "Info");
+            }
+            else
+            {
+                MessageBox.Show("No", "Info");
+            }
         }
     }
 }
