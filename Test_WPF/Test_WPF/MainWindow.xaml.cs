@@ -34,11 +34,11 @@ namespace Test_WPF
                 MessageBoxImage.Information);
             if(result == MessageBoxResult.Yes)
             {
-                MessageBox.Show("Yes", "Info");
+                MessageBox.Show("Да", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
             {
-                MessageBox.Show("No", "Info");
+                MessageBox.Show("Нет", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
     }
