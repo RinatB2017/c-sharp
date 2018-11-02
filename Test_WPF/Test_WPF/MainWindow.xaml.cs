@@ -38,12 +38,20 @@ namespace Test_WPF
             {
                 //MessageBox.Show("Да", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
                 btn.Background = Brushes.Red;
+                Console.WriteLine("Красный цвет");
             }
             else
             {
                 //MessageBox.Show("Нет", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
                 btn.Background = Brushes.Green;
+                Console.WriteLine("Зеоеный цвет");
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Test_window tw = new Test_window();
+            tw.Show();
         }
     }
 }
