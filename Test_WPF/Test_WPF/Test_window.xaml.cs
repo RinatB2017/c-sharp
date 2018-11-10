@@ -16,15 +16,20 @@ namespace Test_WPF
         Random rand = new Random();
         Ellipse ellipse = null;
 
+        Label lbl_digit;
+
         public Test_window()
         {
             InitializeComponent();
 
-            test();
+            lbl_digit = (Label)this.FindName("digit");
+            lbl_digit.Content = "0";
+
+            //test();
             //test2();
         }
 
-        public void test2()
+        public void Test2()
         {
             //Initialize the timer class
             timer = new System.Windows.Threading.DispatcherTimer();
@@ -96,5 +101,49 @@ namespace Test_WPF
             Canvas.SetLeft(myEllipse, 0);
             Canvas.SetTop(myEllipse, 0);
         }
+
+        private void Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+            switch(btn.Name)
+            {
+                case "btn_1":
+                    lbl_digit.Content = "1";
+                    break;
+
+                case "btn_2":
+                    lbl_digit.Content = "2";
+                    break;
+
+                case "btn_3":
+                    lbl_digit.Content = "3";
+                    break;
+
+                case "btn_4":
+                    lbl_digit.Content = "4";
+                    break;
+
+                case "btn_5":
+                    lbl_digit.Content = "5";
+                    break;
+
+                case "btn_6":
+                    lbl_digit.Content = "6";
+                    break;
+
+                case "btn_7":
+                    lbl_digit.Content = "7";
+                    break;
+
+                case "btn_8":
+                    lbl_digit.Content = "8";
+                    break;
+
+                case "btn_9":
+                    lbl_digit.Content = "9";
+                    break;
+            }
+        }
+
     }
 }

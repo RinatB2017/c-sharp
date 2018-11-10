@@ -7,7 +7,20 @@
         mc:Ignorable="d"
         Title="Test_window" Height="450" Width="800">
     <Grid>
-        <Canvas Name="Can1" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
+        <Canvas Name="Can1" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+            <Grid HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="105" Canvas.Left="41" Canvas.Top="33">
+                <Button x:Name="btn_9" Content="9" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+                <Button x:Name="btn_8" Content="8" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+                <Button x:Name="btn_7" Content="7" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+                <Button x:Name="btn_6" Content="6" HorizontalAlignment="Left" Margin="70,35,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+                <Button x:Name="btn_5" Content="5" HorizontalAlignment="Left" Margin="40,35,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+                <Button x:Name="btn_4" Content="4" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+                <Button x:Name="btn_3" Content="3" HorizontalAlignment="Left" Margin="70,60,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+                <Button x:Name="btn_2" Content="2" HorizontalAlignment="Left" Margin="40,60,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+                <Button x:Name="btn_1" Content="1" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="25" Click="Click"/>
+            </Grid>
+            <Label x:Name="digit" Content="Label" Canvas.Left="198" Canvas.Top="40" RenderTransformOrigin="0.211,1.154" FontSize="22"/>
+        </Canvas>
 
     </Grid>
 </Window>

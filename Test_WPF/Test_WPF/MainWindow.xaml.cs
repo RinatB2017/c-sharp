@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Test_WPF
 {
@@ -20,9 +10,27 @@ namespace Test_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        TextBox te;
+        Button btn2;
+        ProgressBar progress;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            Init_gl();
+        }
+
+        private void Init_gl()
+        {
+            te = (TextBox)this.FindName("tb_text");
+            te.Clear();
+
+            btn2 = (Button)this.FindName("btn_main");
+            btn2.Content = "TEST";
+
+            progress = (ProgressBar)this.FindName("pb_test");
+            progress.Value = 33;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -44,7 +52,7 @@ namespace Test_WPF
             {
                 //MessageBox.Show("Нет", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
                 btn.Background = Brushes.Green;
-                Console.WriteLine("Зеоеный цвет");
+                Console.WriteLine("Зеленый цвет");
             }
         }
 
@@ -53,5 +61,12 @@ namespace Test_WPF
             Test_window tw = new Test_window();
             tw.Show();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var n = 2;
+            te.Text = "n=" + n;
+        }
+
     }
 }
