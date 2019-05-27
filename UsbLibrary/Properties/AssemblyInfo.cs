@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 // Использованна в качестве фунамента, оргинальная библиотека - http://www.codeproject.com/KB/cs/USB_HID.aspx

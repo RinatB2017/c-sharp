@@ -1,4 +1,4 @@
-﻿namespace BrainAnalizer
+namespace BrainAnalizer
 {
     partial class Form1
     {
