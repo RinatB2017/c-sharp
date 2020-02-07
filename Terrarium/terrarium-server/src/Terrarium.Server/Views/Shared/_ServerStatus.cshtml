@@ -1,0 +1,40 @@
+@model Terrarium.Server.ViewModels.ServerStatusViewModel
+
+<div class="list-group">
+    <div class="list-group-item active">
+        <h4 class="list-group-item-heading" style="color:white">Server Status</h4>
+    </div>
+    <div class="list-group-item">
+        @if (Model.IsServicesUp)
+        {
+            <span class="badge" style="background-color: green">Up</span>
+        }
+        else
+        {
+            <span class="badge" style="background-color: red">Down</span>
+        }
+        Web Services
+    </div>
+    <div class="list-group-item">
+        @if (Model.IsDatabaseUp)
+        {
+            <span class="badge" style="background-color: green">Up</span>
+        }
+        else
+        {
+            <span class="badge" style="background-color: red">Down</span>
+        }
+        Database
+    </div>
+    <div class="list-group-item">
+        @if (Model.PeerCount > 0)
+        {
+            <span class="badge" style="background-color: green">@Model.PeerCount</span>
+        }
+        else
+        {
+            <span class="badge" style="background-color: red">@Model.PeerCount</span>
+        }
+        Peers
+    </div>
+</div>

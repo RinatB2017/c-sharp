@@ -1,0 +1,33 @@
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>Terrarium Server</h1>
+    <p class="lead">Terrarium provides a great way for developers to learn about the .NET programming model and language as they develop creatures and introduce them into a peer-to-peer ecosystem.</p>
+    <p>
+        <a href="http://terrarium.azurewebsites.net/" class="btn btn-primary btn-lg">Learn more &raquo;</a>
+        <a href="https://www.nuget.org/packages/Terrarium.Sdk/"><img src="@Url.Content("~/Images/nuget.png")" alt="" /></a>
+        <a href="https://github.com/terrariumapp"><img src="@Url.Content("~/Images/github.png")" alt="Fork us on GitHub" /></a>
+    </p>
+</div>
+
+<!-- layout blatently stolen from http://www.west-wind.com/westwind.applicationconfiguration/ Hi Rick! -->
+
+<div class="row">
+    <div class="col-lg-6">
+        <h2>Learn</h2>
+        <p>
+            This site contains the live Terrarium Server that clients connect with via a RESTful API. Documentation for the API can be found <a href="~/swagger" target="_new">here</a>.
+        </p>
+        <p>
+            Looking for developer documentation, background information, news, tips, strategies, or general help?
+            Please visit <a href="http://terrarium.azurewebsites.net/">the main site here</a>.
+        </p>
+    </div>
+    <div class="col-lg-6">
+        <h2>Stats</h2>
+        <p>Terrarium Server tracks all aspects of all organisms in the system. Who's the top bug, fasted moving, etc. so you can check it all out here.</p>
+        <p>You can use this page to track your own creations usage statistics, or see what the compeition is up to. Check it out @Html.ActionLink("now", "Usage", "Home")!</p>
+    </div>
+</div>
