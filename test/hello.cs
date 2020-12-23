@@ -15,8 +15,8 @@ namespace HelloWorldApp {
             // printing Hello World! 
             Console.WriteLine("Hello World!"); 
 
-            int[,] data;
-            Console.WriteLine("Len " + data.Length);
+//             int[,] data;
+//             Console.WriteLine("Len " + data.Length);
             
             // To prevents the screen from  
             // running and closing quickly 
